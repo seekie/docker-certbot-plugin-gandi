@@ -32,4 +32,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ steps.get_repository.outputs.NAME }}:latest,${{ steps.get_repository.outputs.NAME }}:${{ steps.get_version.outputs.VERSION }}
+        tags: seekie/${{ steps.get_repository.outputs.NAME }}:latest,seekie/${{ steps.get_repository.outputs.NAME }}:${{ steps.get_version.outputs.VERSION }}
