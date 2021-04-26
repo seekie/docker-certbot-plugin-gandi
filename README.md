@@ -10,8 +10,7 @@
     -v '<path-to-gandi.ini>:/gandi.ini' \
     seekie/docker-certbot-plugin-gandi:latest \
       certonly -a certbot-plugin-gandi:dns --certbot-plugin-gandi:dns-credentials /gandi.ini \
-      -d domain.com \
-      -d \*.domain.com \
+      -d domain.com,*.domain.com \
       --server https://acme-v02.api.letsencrypt.org/directory
   ```
 4. Renew certificate
